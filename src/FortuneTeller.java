@@ -21,7 +21,7 @@ public class FortuneTeller {
 		int bMonth = input.nextInt();
 
 		System.out.println("Enter your favorite ROYGBIV color (if you don't know what ROYGBIV is type Help):");
-		String color = input.next().toLowerCase();
+		String color = input.next();
 		//statement for if the user does not know what ROYGBIV stands for
 		if (color.toLowerCase().equals("help")) {
 			System.out.println("ROYGBIV stands for red, orange, yellow, green, blue, indigo, and violet");
@@ -66,28 +66,28 @@ public class FortuneTeller {
 
 		// statement to determine mode of transportation
 		String transportation = null;
-		if (color.equals("red")) {
+		if (color.toLowerCase().equals("red")) {
 			transportation = "Tesla";
 		} else {
-			if (color.equals("red")) {
+			if (color.toLowerCase().equals("red")) {
 				transportation = "Tesla";
 			}
-			if (color.equals("orange")) {
+			if (color.toLowerCase().equals("orange")) {
 				transportation = "Jeep";
 			}
-			if (color.equals("yellow")) {
+			if (color.toLowerCase().equals("yellow")) {
 				transportation = "Toyota";
 			}
-			if (color.equals("green")) {
+			if (color.toLowerCase().equals("green")) {
 				transportation = "GMC";
 			}
-			if (color.equals("blue")) {
+			if (color.toLowerCase().equals("blue")) {
 				transportation = "Moped";
 			}
-			if (color.equals("indigo")) {
+			if (color.toLowerCase().equals("indigo")) {
 				transportation = "Chevy";
 			}
-			if (color.equals("violet")) {
+			if (color.toLowerCase().equals("violet")) {
 				transportation = "Buggy";
 			}
 
