@@ -22,7 +22,7 @@ public class FortuneTeller {
 
 		System.out.println("Enter your favorite ROYGBIV color (if you don't know what ROYGBIV is type Help):");
 		String color = input.next();
-		//statement for if the user does not know what ROYGBIV stands for
+		// statement for if the user does not know what ROYGBIV stands for
 		if (color.toLowerCase().equals("help")) {
 			System.out.println("ROYGBIV stands for red, orange, yellow, green, blue, indigo, and violet");
 			System.out.println("Enter another color");
@@ -92,23 +92,23 @@ public class FortuneTeller {
 			}
 
 		}
-		
-		//Bank balance statement 
-		String bankBalance = null;
-		if(bMonth >=1 && bMonth<= 4){
-			bankBalance = "$365,000.00";
-		} else if(bMonth >=5 && bMonth <=7){
-				bankBalance = "$550.00";
-			} else if(bMonth >=8 && bMonth <=10){
-				bankBalance = "$575,000.00";
-			} else if(bMonth >=11 && bMonth <=12){
-				bankBalance = "6,750,000.00";
-			}
-			else {bankBalance = "$0.00";}
-			
-			
 
-		System.out.println(firstName + " " + lastName + " will retire in " + Retirement + " years with " + bankBalance + " in the bank, a vacation home in " +  vacationHome + " and travel by " + transportation + ".");
+		// Bank balance statement
+		String bankBalance = null;
+		if (bMonth >= 1 && bMonth <= 4) {
+			bankBalance = "$365,000.00";
+		} else if (bMonth >= 5 && bMonth <= 7) {
+			bankBalance = "$550.00";
+		} else if (bMonth >= 8 && bMonth <= 10) {
+			bankBalance = "$575,000.00";
+		} else if (bMonth >= 11 && bMonth <= 12) {
+			bankBalance = "6,750,000.00";
+		} else {
+			bankBalance = "$0.00";
+		}
+
+		System.out.println(firstName + " " + lastName + " will retire in " + Retirement + " years with " + bankBalance
+				+ " in the bank, a vacation home in " + vacationHome + " and travel by " + transportation + ".");
 
 		input.close();
 	}
