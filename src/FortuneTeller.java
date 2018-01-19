@@ -93,9 +93,23 @@ public class FortuneTeller {
 			}
 
 		}
+		
+		//Bank balance statement 
+		double bankBalance = 0;
+		if(bMonth >=1 && bMonth<= 4){
+			bankBalance = 365000.00;
+		} else if(bMonth >=5 && bMonth <=7){
+				bankBalance = 550.00;
+			} else if(bMonth >=8 && bMonth <=10){
+				bankBalance = 575000.00;
+			} else if(bMonth >=11 && bMonth <=12){
+				bankBalance = 6750000.00;
+			}
+			else {bankBalance = 0;}
+			
+			
 
-		System.out.println(firstName + " " + lastName + " will retire in " + Retirement + " with " + vacationHome + " "
-				+ transportation);
+		System.out.println(firstName + " " + lastName + " will retire in " + Retirement + " years with " + "$" + bankBalance + " in the bank, a vacation home in  " +  vacationHome + " and travel by " + transportation + ".");
 
 		input.close();
 	}
