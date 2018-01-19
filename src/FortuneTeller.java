@@ -9,21 +9,52 @@ public class FortuneTeller {
 
 		// start of fortune questions
 		System.out.println("Enter your first name:");
-		String firstName = input.nextLine();
+		String firstName = input.nextLine().trim();
+		// quit statement
+		if (firstName.toLowerCase().equals("quit")) {
+			System.out.println("Nobody likes a quitter...");
+			System.exit(-1);
+		}
 
 		System.out.println("Enter your last name:");
-		String lastName = input.nextLine();
+		String lastName = input.nextLine().trim();
+		// quit statement
+		if (lastName.toLowerCase().equals("quit")) {
+			System.out.println("Nobody likes a quitter...");
+			System.exit(-1);
+		}
 
 		System.out.println("Enter your age (as a whole number):");
-		int age = input.nextInt();
+		String ageStr = input.nextLine();// age as string
+		int age = 0;// assign age as integer
+		// quit statement
+		if (ageStr.equals("quit")) {
+			System.out.println("Nobody likes a quitter...");
+			System.exit(-1);
+		} else {
+			age = Integer.parseInt(ageStr); // convert ageStr string to integer
+		}
 
 		System.out.println("Enter your birth month (as a number):");
-		int bMonth = input.nextInt();
+		String bMonthStr = input.nextLine();
+		int bMonth = 0;// assign bMonth as integer
+		// quit statement
+		if (bMonthStr.equals("quit")) {
+			System.out.println("Nobody likes a quitter...");
+			System.exit(-1);
+		} else {
+			bMonth = Integer.parseInt(bMonthStr); // convert bMonthStr string to integer
+		}
 
 		System.out.println("Enter your favorite ROYGBIV color (if you don't know what ROYGBIV is type Help):");
 		String color = input.next();
+		// quit statement
+		if (color.toLowerCase().equals("quit")) {
+			System.out.println("Nobody likes a quitter...");
+			System.exit(-1);
+		}
 		// statement for if the user does not know what ROYGBIV stands for
-		if (color.toLowerCase().equals("help")) {
+		else if (color.toLowerCase().equals("help")) {
 			System.out.println("ROYGBIV stands for red, orange, yellow, green, blue, indigo, and violet");
 			System.out.println("Enter another color");
 			color = input.next();
@@ -32,7 +63,15 @@ public class FortuneTeller {
 		}
 
 		System.out.println("How many siblings do you have (as a number):");
-		int sibling = input.nextInt();
+		String siblingStr = input.nextLine();
+		int sibling = 0;
+		// quit statement
+		if (siblingStr.equals("quit")) {
+			System.out.println("Nobody likes a quitter...");
+			System.exit(-1);
+		} else {
+			sibling = Integer.parseInt(bMonthStr); // convert siblingStr string to integer
+		}
 
 		// statement to determine years to retire
 		int Retirement;
