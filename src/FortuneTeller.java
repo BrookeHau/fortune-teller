@@ -43,7 +43,8 @@ public class FortuneTeller {
 			System.out.println("Nobody likes a quitter...");
 			System.exit(-1);
 		} else {
-			bMonth = Integer.parseInt(bMonthStr); // convert bMonthStr string to integer
+			bMonth = Integer.parseInt(bMonthStr); // convert bMonthStr string to
+													// integer
 		}
 
 		System.out.println("Enter your favorite ROYGBIV color (if you don't know what ROYGBIV is type Help):");
@@ -59,8 +60,9 @@ public class FortuneTeller {
 			System.out.println("Enter another color");
 			color = input.next();
 		} else {
-			input.nextLine();
+
 		}
+		input.nextLine();
 
 		System.out.println("How many siblings do you have (as a number):");
 		String siblingStr = input.nextLine();
@@ -70,7 +72,8 @@ public class FortuneTeller {
 			System.out.println("Nobody likes a quitter...");
 			System.exit(-1);
 		} else {
-			sibling = Integer.parseInt(bMonthStr); // convert siblingStr string to integer
+			sibling = Integer.parseInt(bMonthStr); // convert siblingStr string
+													// to integer
 		}
 
 		// statement to determine years to retire
